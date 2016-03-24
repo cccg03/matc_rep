@@ -9,9 +9,9 @@ if [ "$username" == "root" ]; then
 		echo "Oh really? You got the power?"
 		echo "Well, how much power do you have?"
 		read powerlevel
-		if [ "$powerlevel" -gt 4 ] && [ "$powerlevel" -lt 9000 ]; then
-			echo "Wow, that's pretty powerful!"
-		elif [ "$powerlevel" -le 4 ]; then
+		if [ "$powerlevel" -ge 10 ] && [ "$powerlevel" -lt 9000 ]; then
+			echo "Alright, I concede. You do indeed have the power!"
+		elif [ "$powerlevel" -le 9 ]; then
 			echo "Ha! I thought you had the power. That's pretty weak."
 		else
 			echo "OVER NINE THOUSAND!!!!"
