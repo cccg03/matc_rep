@@ -3,16 +3,16 @@ echo Enter your name
 read username
 
 if [ "$username" == "root" ]; then
-	echo "Do you have the power?"
+	echo "Do you have the power, $username?"
 	read gotpower
 	if [ "$gotpower" == "y" ] || [ "$gotpower" == "yes" ]; then
-		echo "You got the power!"
-		echo "How much power do you have?"
+		echo "Oh really? You got the power?"
+		echo "Well, how much power do you have?"
 		read powerlevel
 		if [ "$powerlevel" -gt 4 ] && [ "$powerlevel" -lt 9000 ]; then
 			echo "Wow, that's pretty powerful!"
 		elif [ "$powerlevel" -le 4 ]; then
-			echo "Oh...that's pretty weak."
+			echo "Ha! I thought you had the power. That's pretty weak."
 		else
 			echo "OVER NINE THOUSAND!!!!"
 		fi
